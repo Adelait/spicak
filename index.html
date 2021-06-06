@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup/magnific-popup.css">
+    <title>Chalupa na Špičáku</title>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#intro" class="nav__logo">
+            <?xml version="1.0" ?><svg class="svg__logo" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" width="30px"; height="auto"; xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_2"/><g id="Layer_3"/><g id="Layer_4"/><g id="Layer_5"/><g id="Layer_6"><g><path d="M48,37.6c0.2-0.4,0.2-0.8,0-1.1l-6.5-10.3H47c0.4,0,0.8-0.2,1-0.6s0.2-0.8,0-1.1l-15-24c-0.4-0.6-1.5-0.6-1.9,0l-15,24    c-0.2,0.3-0.2,0.8,0,1.1s0.6,0.6,1,0.6h5.5L16,36.5c-0.2,0.3-0.2,0.8,0,1.1c0.2,0.4,0.6,0.6,1,0.6h5.5L16,48.5    c-0.2,0.3-0.2,0.8,0,1.1c0.2,0.4,0.6,0.6,1,0.6h13.9v11.6h-4.3c-0.6,0-1.1,0.5-1.1,1.1S26,64,26.6,64h10.8c0.6,0,1.1-0.5,1.1-1.1    s-0.5-1.1-1.1-1.1h-4.3V50.2H47c0.4,0,0.8-0.2,1-0.6c0.2-0.4,0.2-0.8,0-1.1l-6.5-10.3H47C47.4,38.2,47.8,37.9,48,37.6z M39.5,35.9    c-0.4,0-0.8,0.2-1,0.6c-0.2,0.4-0.2,0.8,0,1.1L45,48H33.1v-0.8l3-3.6c0.4-0.5,0.3-1.2-0.2-1.6c-0.5-0.4-1.2-0.3-1.6,0.2l-1.3,1.6    V32.5l3.4-3.4c0.4-0.4,0.4-1.1,0-1.6s-1.1-0.4-1.6,0l-1.8,1.8V17.6l2.2-2.6c0.4-0.5,0.3-1.2-0.2-1.6c-0.5-0.4-1.2-0.3-1.6,0.2    l-2.4,2.9c-0.1,0.1-0.2,0.2-0.2,0.4c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v5.3l-1.8-1.8c-0.4-0.4-1.1-0.4-1.6,0    c-0.4,0.4-0.4,1.1,0,1.6l3.4,3.4v10.6l-1.3-1.6c-0.4-0.5-1.1-0.5-1.6-0.2c-0.5,0.4-0.5,1.1-0.2,1.6l3,3.7V48H19l6.5-10.3    c0.2-0.3,0.2-0.8,0-1.1c-0.2-0.4-0.6-0.6-1-0.6H19l6.5-10.3c0.2-0.3,0.2-0.8,0-1.1c-0.2-0.4-0.6-0.6-1-0.6H19L32,3.1l13,20.8h-5.5    c-0.4,0-0.8,0.2-1,0.6c-0.2,0.4-0.2,0.8,0,1.1L45,35.9H39.5z"/></g></g><g id="Layer_7"/><g id="Layer_8"/><g id="Layer_9"/><g id="Layer_10"/><g id="Layer_11"/><g id="Layer_12"/><g id="Layer_13"/><g id="Layer_15"/><g id="Layer_16"/><g id="Layer_17"/><g id="Layer_18"/><g id="Layer_19"/><g id="Layer_20"/><g id="Layer_21"/><g id="Layer_22"/><g id="Layer_23"/><g id="Layer_24"/><g id="Layer_25"/><g id="Layer_26"/><g id="Layer_27"/></svg>
+        </a>
+
+        <input class="menu__btn" type="checkbox" id="menu-btn" />
+        <label class="menu__icon" for="menu-btn"><span class="nav__icon"></span></label>
+        <ul class="nav__menu">
+            <li><a class="nav__item" href="#info" onclick="closeMenu()">Úvod</a></li>
+            <li><a class="nav__item" href="#studio" onclick="closeMenu()">Studio 1 & 2</a></li>
+            <li><a class="nav__item" href="#apartman" onclick="closeMenu()">Apartmán</a></li>
+            <li><a class="nav__item" href="#details" onclick="closeMenu()">Informace</a></li>
+            <li><a class="nav__item" href="#pricing" onclick="closeMenu()">Ceník</a></li>
+            <li><a class="nav__item" href="#reservation" onclick="closeMenu()">Rezervace</a></li>
+            <li><a class="nav__item" href="#contact" onclick="closeMenu()">Kontakt</a></li>
+        </ul> 
+    </nav>
+
+    <header class="intro" id="intro">
+        <div class="intro__content">
+            <p class="intro__content--text">Chalupa na Špičáku</p>
+        </div>
+        <div class="intro__photo">
+           <img src="images/chalupa1.jpg" alt="chalupa 1"> 
+        </div>
+    </header>
+
+
+    <section class="info" id="info">
+        <h3>Kde nás najdete</h3>
+        <p class="info__text">Špičák je součástí městečka Železná Ruda, leží na silnici severním směrem na Hojsovu Stráž a dále Nýrsko a Klatovy. Chata se nachází na svahu pod Pancířem, na polosamotě, v místě zvaném Spáleniště. Stojí přímo v lese s nádherným výhledem přes údolí na protilehlý vrchol Špičáku a Jezerní horu. </br>Toto umístění přináší trochu komplikovanější příjezd z hlavní silnice.</p>
+        <p class="center-text"><button class="btn__basic"> <a href="#transport">Jak za námi?</a></button></p>
+
+        <div class="info_activities">
+            <h3>Co se u nás dá podnikat</h3>
+            <p><span class="bold-text">V létě</span> se Špičák stává ideálním výchozím bodem pro turistiku a cykloturistiku, okolí je doslova protkáno značenými trasami. Příjemným zážitkem je i houbaření v okolních lesích.</p>
+            <p><span class="bold-text">V zimě</span> je Špičák skvělým místem pro lyžování. Necelých 400 m po vrstevnici je sjezdovka/lyžařský areál ALPALOUKA, Vy pouze nazujete lyže na chatě a za pár minut už sjíždíte sjezdovku. Další lyžařské areály jsou na dohled. Samozřejmostí jsou běžkařské trasy v okolí.</p> 
+        </div>
+    </section>
+    <section class="studio" id="studio">
+        <h2>Studio 1 & Studio 2</h2>
+        <p class="studio__text">K pronájmu nabízíme dvě studia. Každé má rozlohu 25m2 a poskytuje tak pohodlné ubytování pro 2 dospělé + 2 děti, případně 4 dospělé.</br>
+        Do studia se vchází ze zastřešené terasy s příjemným posezením, odkud je nádherný výhled na západ slunce nad Jezerní horou.</br>
+        Obývací část zahrnuje rozkládací pohovku pro 2 osoby, palandovou postel, jídelní kout, úložné prostory. Součástí je plně vybavený kuchyňský kout s kuchyňskou linkou s dvouvařičem, mikrovlnnou troubou, ledničkou. Sociální zařízení zahrnuje WC a sprchový kout.</br>
+        Prostor je vytápěn elektrickými přímotopy a kamny na dřevo. Spotřebované dřevo je součástí ceny apartmánu, uvítáme Vaši pomoc s jeho přípravou. </p>
+        <p class="center-text"><button class="btn__basic"> <a href="#reservation">Rezervujte ihned</a></button></p>
+        <div class="studio__photogallery">
+            <a href="images/studio/Studio1_1.jpg" title="Studio 1"><img src="images_t/galerie2_t.jpg"></a>
+            <a href="images/Studio/Studio1_2.jpg" title="Studio 1"><img src="images_t/galerie3_t.jpg"></a>
+            <a href="images/Studio/Studio1_3.jpg" title="Studio 1"><img src="images_t/galerie4_t.jpg"></a>
+            <a href="images/Studio/Studio1_4.jpg" title="Studio 1"><img src="images_t/galerie5_t.jpg"></a>
+            <a href="images/Studio/Studio1_5.jpg" title="Studio 1"><img src="images_t/galerie6_t.jpg"></a>
+            <a href="images/Studio/Studio1_6.jpg" title="Studio 1"><img src="images_t/galerie2_t.jpg"></a>
+            <a href="images/Studio/Studio1_7.jpg" title="Studio 1"><img src="images_t/galerie3_t.jpg"></a>
+            <a href="images/Studio/Studio2_1.jpg" title="Studio 2"><img src="images_t/galerie4_t.jpg"></a>
+            <a href="images/Studio/Studio2_2.jpg" title="Studio 2"><img src="images_t/galerie5_t.jpg"></a>
+            <a href="images/Studio/Studio2_3.jpg" title="Studio 2"><img src="images_t/galerie6_t.jpg"></a>
+            <a href="images/Studio/Studio_vchod.jpg" title="vchod do studia"><img src="images_t/galerie5_t.jpg"></a>
+        </div>
+    </section>
+    <section class="apartman" id="apartman">
+        <h2>Apartmán</h2>
+        <p class="apartman__text">Mezonetový apartmán zajistí velice komfortní ubytování pro 4 dospělé + 2 děti (popř. 6 dospělých).</br>
+        Obývací část v 2.NP zahrnuje rozkládací pohovku pro 2 osoby + křesla, jídelní stůl pro 4-6 osob, úložné prostory, TV. Plně vybavená kuchyňská linka disponuje dvouvařičem, mikrovlnnou troubou a ledničkou. Sociální zařízení zahrnuje WC a sprchu.</br>
+        Ve spojovací chodbě do dalšího patra je umístěna lednička, přistýlka a odkládací prostory. V 3.NP je umístěna ložnice s manželskou postelí a přistýlkou, úložnými prostorami a vlastním WC s umyvadlem. Pro dobrodružně založené děti je v úplném podkroví další prostor cca 9m2, kde se mohou ukrýt před rodiči.</br>
+        Jak v obývací části, tak v ložnici je terasa s výhledem na západ.</br>
+        Spodní část apartmánu je vytápěná elektrickými přímotopy a kamny na dřevo, horní část (ložnice) elektrickými přímotopy.
+        </p>
+        <p class="center-text"><button class="btn__basic"> <a href="#reservation">Rezervujte ihned</a></button></p>
+        <div class="apartman__photogallery">
+            <a href="images/Apartman/Apartman_1.jpg" title="?"><img src="images_t/galerie2_t.jpg"></a>
+            <a href="images/Apartman/Apartman2.jpg" title="?"><img src="images_t/galerie3_t.jpg"></a>
+            <a href="images/Apartman/Apartman3.jpg" title="vchod na terasu"><img src="images_t/galerie4_t.jpg"></a>
+            <a href="images/Apartman/Apartman4.jpg" title="?"><img src="images_t/galerie5_t.jpg"></a>
+            <a href="images/Apartman/Apartman6.jpg" title="?"><img src="images_t/galerie6_t.jpg"></a>
+            <a href="images/Apartman/Apartman7.jpg" title="?"><img src="images_t/galerie2_t.jpg"></a>
+            <a href="images/Apartman/Apartman8.jpg" title="schody do patra"><img src="images_t/galerie3_t.jpg"></a>
+            <a href="images/Apartman/Apartman9.jpg" title="?"><img src="images_t/galerie4_t.jpg"></a>
+        </div>
+    </section>
+    <section class="details" id="details">
+        <div class="details__transport" id="transport">
+            <h2>Informace</h2>
+            <h3>Jak se k nám dostanete</h3>
+            <div class="transport__summer">
+                <h4>V létě</h4>
+                <p>Od budovy THAJSKÉ MASÁŽE asi 400m po asfaltu, dále po zpevněné, a posléze lesní cestě až k chatě – autem asi 3 minuty, na kole 10min. Není ale potřeba mít obavy, jezdíme tam každý den autem na nákup – a není to 4x4. Parkování před chatou zajištěno.</p>
+                <div>
+                    <img src="images/map_summer.jpg" alt="letní mapa" width="300px">
+                </div>
+            </div>
+            <div class="transport__winter">
+                <h4>V zimě</h4>
+                <p>V zimní sezóně vyzvedneme vaše zavazadla sněžným skůtrem na parkovišti Kaskády, kde můžete zanechat váš vůz, a pak vás čeká cca 800 m procházka do kopce.</p>
+            </div>
+        </div>
+
+        <div class="details__rules">
+            <h3>Jak to u nás chodí</h3>
+            <ul class="rules">
+                <li>Všem našim hostům je k dispozici kolárna, gril i odpočinkový zahradní nábytek.</li>
+                <li>Přestože je stravování převážně vlastní, nabízíme kromě nápojů a vína i sortiment hotových jídel francouzské provenience. Po dohodě Vám zajistíme i maso na grilování či jiné suroviny (z lokálních zdrojů?) – např. ryby ze sádek Milence.</li>
+                <li>Celá budova je přísně nekuřácká, při příjezdu budete seznámeni s rozmístěním hasicích přístrojů a zásadami pro nakládání s odpady - KUKA vůz k nám nevyjede ani v létě 😊 </li>
+                <li>Dřevo, které spálíte v kamnech, je v ceně pobytu – samozřejmě uvítáme, pokud nám pomůžete s jeho přípravou.</li>
+                <li>Domácí mazlíčci nejsou povoleni.</li>
+            </ul>   
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <h2>Ceník</h2>
+        <table class="pricing__list">
+            <tr>
+                <td class="table__none"></td>
+                <th  class="table__heading">Léto</th>
+                <th  class="table__heading">Zima</th>
+                <th  class="table__heading">Jarní prázdniny</th>
+                <th  class="table__heading">Vánoce & Silvestr</th>
+            </tr>
+            <tr >
+                <th class="table__heading">Studio 1 / Studio 2</th>
+                <td class="table__content">6000,-</td>
+                <td class="table__content">7000,-</td>
+                <td class="table__content">8000,-</td>
+                <td class="table__content">12 000,-</td>
+            </tr>
+            <tr>
+                <th class="table__heading">Apartmán</th>
+                <td class="table__content">12 000,-</td>
+                <td class="table__content">14 000,-</td>
+                <td class="table__content"> 16 000,-</td>
+                <td class="table__content">nelze</td>
+            </tr>
+            <tr>
+                <th class="table__heading">Celý objekt</th>
+                <td class="table__content">20 000,-</td>
+                <td class="table__content">24 000,-</td>
+                <td class="table__content">28 000,-</td>
+                <td class="table__content">20 000,-</td>
+            </tr>
+        </table>
+        <div class="pricing__details">
+            <p>Vratná kauce Studio 1000,-, apartmán 2000,-.</p>
+            <p>Rekreační poplatek / osoba / den 10 Kč</p>
+            <p>Záloha na pobyt je ve výši 50% z celkové ceny splatná do 3 dnů po rezervaci, je nevratná v případě storna v době kratší než 30 dnů před příjezdem. Záloha se platí převodem na účet, doplatek v hotovosti při příjezdu.</p>
+            <p>Před odjezdem není nutné gruntovat, základní úklid, umyté nádobí a vymetená kamna postačí. Pokud nechcete uklízet, postaráme se sami za paušál 750Kč.</p>
+        </div>
+    </section>
+    <section class="reservation" id="reservation">
+        <h2>Rezervace</h2>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Kontakt</h2>
+        <p>Adresa</p>
+        <p>GPS souřednice?</p>
+        <p>tel: <a href="tel:+420xxxxxxxx" class="contact__tel">xxxxxxxx</a></p>
+        <p>mail: <a href="mailto:xy@mail.cz" class="contact__mail">xy@mail.cz</a></p>
+    </section>
+
+
+
+    <footer class="foot">
+        <p class="foot__copy">Vytvořila Adéla &copy;2021</p>
+    </footer>
+
+    <script>
+        function closeMenu(){
+            document.getElementById("menu-btn").checked=false;
+        }
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="popup/jquery.magnific-popup.min.js"></script>  
+    <script>
+        $(document).ready(function() {
+            $('.apartman__photogallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery:{enabled:true},
+                image:{
+                    titleSrc: 'title'
+                }
+            });
+            $('.studio__photogallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery:{enabled:true},
+                image:{
+                    titleSrc: 'title'
+                }
+            });
+
+        });
+    </script>
+    
+</body>
+</html>

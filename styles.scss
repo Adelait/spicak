@@ -1,0 +1,395 @@
+$background-color-main: #87a8a8;
+$font-color: #084a4a;
+$font-color-sub: #d5dfdf;
+$background-section1: #d5dfdf;
+$background-section2: #87a8a8;
+$font-link: #604646;
+
+$border-radius-content: 8px;
+$border-radius-section: 8px;
+$text-align-center: center;
+$text-align-left: left;
+$section-padding: 2rem;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lora", serif;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+  margin: auto;
+  width: 100%;
+  background-color: $background-color-main;
+  color: $font-color;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(2rem, auto) repeat(7, auto) minmax(2rem, auto);
+}
+
+p,
+ul {
+  margin: auto;
+  width: 75%;
+  padding-bottom: 0.5rem;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.center-text {
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  text-align: $text-align-center;
+  margin: $section-padding;
+}
+
+h2:after {
+  background-color: $font-color;
+  content: "";
+  display: block;
+  height: 0.1rem;
+  max-width: 75%;
+  top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+section {
+  padding: $section-padding;
+}
+
+.info,
+.apartman,
+.pricing,
+.contact {
+  background-color: $background-section1;
+}
+
+.studio,
+.details,
+.reservation {
+  background-color: $background-section2;
+}
+
+.btn__basic {
+  padding: 10px 20px 10px 20px;
+  border-radius: $border-radius-content;
+  border: 2px solid $font-color;
+  display: inline-block;
+  margin: 2rem auto 2rem auto;
+  min-width: 150px;
+  text-align: $text-align-center;
+  vertical-align: middle;
+
+  a {
+    text-decoration: none;
+    color: $font-color;
+    font-weight: 600;
+  }
+}
+
+.apartman,
+.info {
+  .btn__basic {
+    background-color: $background-section1;
+    &:hover {
+      color: $font-color-sub;
+      background-color: $font-color;
+
+      a {
+        color: $font-color-sub;
+      }
+    }
+  }
+}
+
+.studio {
+  button {
+    background-color: $background-section2;
+    &:hover {
+      color: $font-color-sub;
+      background-color: $font-color;
+
+      a {
+        color: $font-color-sub;
+      }
+    }
+  }
+}
+
+.nav {
+  background-color: $background-color-main;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: $background-color-main;
+  }
+
+  li a {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: $font-color;
+  }
+
+  .nav__item:hover {
+    background-color: $font-color;
+    color: $font-color-sub;
+  }
+
+  &__logo {
+    float: left;
+    display: block;
+    padding: 10px 0 0 10px;
+  }
+
+  .svg__logo:hover {
+    transform: scale(1.1, 1.1);
+    path {
+      fill: $font-color-sub;
+    }
+  }
+
+  &__menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .menu__icon {
+    cursor: pointer;
+    float: right;
+    padding: 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .menu__icon .nav__icon {
+    background: $font-color;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 24px;
+    margin-top: 5px;
+  }
+
+  .menu__icon .nav__icon:before {
+    background: $font-color;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s ease-out;
+    top: 4px;
+  }
+
+  .menu__icon .nav__icon:after {
+    background: $font-color;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s ease-out;
+    top: -4px;
+  }
+
+  .menu__btn {
+    display: none;
+  }
+
+  .menu__btn:checked ~ .nav__menu {
+    max-height: 240px;
+  }
+
+  .menu__btn:checked ~ .menu__icon .nav__icon {
+    background: transparent;
+  }
+
+  .menu__btn:checked ~ .menu__icon .nav__icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .menu__btn:checked ~ .menu__icon .nav__icon:after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 900px) {
+  .nav {
+    background-color: $background-color-main;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu__btn,
+    .menu__icon {
+      display: none;
+    }
+
+    .nav__menu {
+      overflow: visible;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    li a {
+      font-size: 1rem;
+      padding: 5px 20px;
+    }
+
+    a {
+      margin: 2px;
+      text-decoration: none;
+
+      &:hover {
+        border-radius: $border-radius-content;
+      }
+    }
+  }
+}
+
+header {
+  grid-row-start: 1;
+
+  .intro__content--text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 4rem auto 1rem auto;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: $font-color-sub;
+    text-align: $text-align-center;
+    vertical-align: middle;
+
+    @media (min-width: 900px) {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin: 4rem auto 2rem auto;
+    }
+  }
+
+  .intro__photo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// fotogalerie
+
+.studio__photogallery,
+.apartman__photogallery {
+  margin: 15px 15px;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+
+    @media (min-width: 980px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  p {
+    padding: 20px 0px;
+  }
+}
+
+.transport__summer img {
+  width: 50%;
+}
+
+.pricing {
+  &__list {
+    margin: 2rem auto 2rem auto;
+    font-size: 0.8rem;
+
+    @media (min-width: 900px) {
+      font-size: 1rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 1.2rem;
+    }
+
+    th,
+    td {
+      padding: 1rem;
+      text-align: $text-align-center;
+    }
+
+    .table__heading {
+      color: $font-color-sub;
+      background-color: $font-color;
+      border-radius: $border-radius-content;
+    }
+
+    .table__content {
+      background-color: $background-section2;
+      border-radius: $border-radius-content;
+    }
+  }
+}
+
+.contact {
+  a {
+    text-decoration: none;
+    color: $font-link;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  p {
+    text-align: $text-align-center;
+  }
+}
+
+footer {
+  p {
+    text-align: $text-align-center;
+  }
+}
