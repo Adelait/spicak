@@ -22,8 +22,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: minmax(2rem, auto) (auto)[7] minmax(2rem, auto);
-      grid-template-rows: minmax(2rem, auto) repeat(7, auto) minmax(2rem, auto);
 }
 
 p,
@@ -67,13 +65,13 @@ section {
 .info,
 .apartman,
 .pricing,
-.contact {
+.foot {
   background-color: #d5dfdf;
 }
 
 .studio,
 .details,
-.reservation {
+.contact {
   background-color: #87a8a8;
 }
 
@@ -94,19 +92,32 @@ section {
   font-weight: 600;
 }
 
-.apartman .btn__basic,
 .info .btn__basic {
   background-color: #d5dfdf;
 }
 
-.apartman .btn__basic:hover,
 .info .btn__basic:hover {
   color: #d5dfdf;
   background-color: #084a4a;
 }
 
-.apartman .btn__basic:hover a,
 .info .btn__basic:hover a {
+  color: #d5dfdf;
+}
+
+.apartman .btn__basic,
+.details .btn__basic {
+  background-color: #87a8a8;
+}
+
+.apartman .btn__basic:hover,
+.details .btn__basic:hover {
+  color: #d5dfdf;
+  background-color: #084a4a;
+}
+
+.apartman .btn__basic:hover a,
+.details .btn__basic:hover a {
   color: #d5dfdf;
 }
 
@@ -413,13 +424,29 @@ header .intro__photo img {
   border-radius: 8px;
 }
 
-.contact a {
+.link {
   text-decoration: none;
-  color: #604646;
+  font-weight: 600;
+  color: #084a4a;
 }
 
-.contact a:hover {
-  font-weight: 600;
+.contact button {
+  background-color: #87a8a8;
+}
+
+.contact button:hover {
+  color: #d5dfdf;
+  background-color: #084a4a;
+}
+
+.contact button:hover a {
+  color: #d5dfdf;
+}
+
+.contact .contact__tel,
+.contact .contact__mail {
+  text-decoration: none;
+  color: #ffd66d;
 }
 
 .contact p {
@@ -428,5 +455,9 @@ header .intro__photo img {
 
 footer p {
   text-align: center;
+  width: 100%;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,7 +3,7 @@ $font-color: #084a4a;
 $font-color-sub: #d5dfdf;
 $background-section1: #d5dfdf;
 $background-section2: #87a8a8;
-$font-link: #604646;
+$font-link: #ffd66d;
 
 $border-radius-content: 8px;
 $border-radius-section: 8px;
@@ -31,7 +31,7 @@ body {
   color: $font-color;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(2rem, auto) repeat(7, auto) minmax(2rem, auto);
+  
 }
 
 p,
@@ -75,13 +75,13 @@ section {
 .info,
 .apartman,
 .pricing,
-.contact {
+.foot {
   background-color: $background-section1;
 }
 
 .studio,
 .details,
-.reservation {
+.contact {
   background-color: $background-section2;
 }
 
@@ -102,7 +102,6 @@ section {
   }
 }
 
-.apartman,
 .info {
   .btn__basic {
     background-color: $background-section1;
@@ -116,6 +115,22 @@ section {
     }
   }
 }
+
+.apartman,
+.details {
+  .btn__basic {
+    background-color: $background-section2;
+    &:hover {
+      color: $font-color-sub;
+      background-color: $font-color;
+
+      a {
+        color: $font-color-sub;
+      }
+    }
+  }
+}
+
 
 .studio {
   button {
@@ -373,14 +388,28 @@ header {
   }
 }
 
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color:$font-color;
+}
+
 .contact {
-  a {
+  button {
+    background-color: $background-section2;
+    &:hover {
+      color: $font-color-sub;
+      background-color: $font-color;
+
+      a {
+        color: $font-color-sub;
+      }
+    }
+  }
+  .contact__tel,
+  .contact__mail {
     text-decoration: none;
     color: $font-link;
-
-    &:hover {
-      font-weight: 600;
-    }
   }
 
   p {
@@ -391,5 +420,9 @@ header {
 footer {
   p {
     text-align: $text-align-center;
+    width: 100%;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
