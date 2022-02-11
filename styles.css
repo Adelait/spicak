@@ -348,7 +348,8 @@ header .intro__photo img {
   width: 100%;
 }
 
-.studio__photogallery,
+.studio1__photogallery,
+.studio2__photogallery,
 .apartman__photogallery {
   margin: 15px 15px;
   padding: 5px 5px;
@@ -366,7 +367,8 @@ header .intro__photo img {
           justify-content: center;
 }
 
-.studio__photogallery img,
+.studio1__photogallery img,
+.studio2__photogallery img,
 .apartman__photogallery img {
   padding: 2px;
   width: 100px;
@@ -374,14 +376,16 @@ header .intro__photo img {
 }
 
 @media (min-width: 980px) {
-  .studio__photogallery img,
+  .studio1__photogallery img,
+  .studio2__photogallery img,
   .apartman__photogallery img {
     width: 200px;
     height: 200px;
   }
 }
 
-.studio__photogallery p,
+.studio1__photogallery p,
+.studio2__photogallery p,
 .apartman__photogallery p {
   padding: 20px 0px;
 }
@@ -425,9 +429,9 @@ header .intro__photo img {
 }
 
 .link {
-  text-decoration: none;
   font-weight: 600;
   color: #084a4a;
+  text-decoration: underline;
 }
 
 .contact button {

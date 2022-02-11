@@ -31,7 +31,6 @@ body {
   color: $font-color;
   display: grid;
   grid-template-columns: 1fr;
-  
 }
 
 p,
@@ -130,7 +129,6 @@ section {
     }
   }
 }
-
 
 .studio {
   button {
@@ -329,7 +327,8 @@ header {
 
 // fotogalerie
 
-.studio__photogallery,
+.studio1__photogallery,
+.studio2__photogallery,
 .apartman__photogallery {
   margin: 15px 15px;
   padding: 5px 5px;
@@ -389,9 +388,9 @@ header {
 }
 
 .link {
-  text-decoration: none;
   font-weight: 600;
-  color:$font-color;
+  color: $font-color;
+  text-decoration: underline;
 }
 
 .contact {
